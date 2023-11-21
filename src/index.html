@@ -8,7 +8,14 @@
     <script src="https://kit.fontawesome.com/d1033388a4.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-bgColor">
+<body class="bg-white dark:bg-slate-900 transition duration-500 ease-in-out">
+    <div class="w-full flex justify-center py-8">
+        <button id="theme-toggle"
+                class="p-2 rounded-full bg-slate-900 text-white dark:bg-white dark:text-slate-900 focus:outline-none transition duration-500 ease-in-out">
+            <i class="fas fa-adjust"></i>
+        </button>
+    </div>
+    <div class="pb-8 text-sm">
     <header class="p-2">
         <nav class="flex justify-between items-center p-4">
             <div class="w-10"><svg xmlns="http://www.w3.org/2000/svg"
@@ -18,8 +25,8 @@
                             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
                     </svg>
             </div>
-            <div class="flex p-3 rounded-full shadow-lg">
-                <a href="#">Take the Quiz</a>
+            <div class="flex p-3 rounded-full shadow-lg bg-white dark:bg-gray-800">
+                <a href="#" class="text-black dark:text-white">Take the Quiz</a>
                 <div class="bg-black rounded-full ml-2 -rotate-45">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
                 </div>
@@ -31,10 +38,10 @@
         </nav>
 
 
-        <div class="flex items-center">
+        <div class="flex items-center justify-center">
             <div class="flex flex-col text-6xl">
                 <div class="flex items-center gap-2">
-                    <p>Simplify your health</p>
+                    <p class="text-black dark:text-white">Simplify your health</p>
                     <div class="w-24 h-24 rotate-45">
                         <svg viewBox="0 0 35.4113 67.2004" fill="none" xmlns="http://www.w3.org/2000/svg"
                             style="width: 100%; height: 100%;">
@@ -44,7 +51,7 @@
                     </div>
                 </div>
                 <div class="flex items-center gap-2">
-                    <p>and wellbeing.</p>
+                    <p class="text-black dark:text-white">and wellbeing.</p>
                     <div class="w-24 h-24">
                         <svg viewBox="0 0 70.7011 70.7011" fill="none" xmlns="http://www.w3.org/2000/svg"
                             style="width: 100%; height: 100%;">
@@ -61,11 +68,11 @@
     </header>
 
     <main class="p-2">
-        <div class="bg-white shadow-lg p-4 rounded-lg flex flex-col gap-2">
+        <div class="bg-white dark:bg-gray-800 shadow-lg p-4 rounded-lg flex flex-col gap-2">
             <div class="flex items-center justify-between">
                 <div class="flex justify items-center gap-2">
                     <div class="border-2 border-solid border-gray-950 rounded-full px-6 py-2">
-                    <a href="">About</a>
+                    <a href="" class="text-black dark:text-white">About</a>
                     </div>
                     <div class="border-2 border-solid border-gray-950 rounded-full -rotate-45 p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="black"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
@@ -76,11 +83,11 @@
                 </div>
             </div>
 
-            <p>Recieve daily packs personalized to your <strong>unique health needs.</strong></p>
+            <p class="text-black dark:text-white">Recieve daily packs personalized to your <strong>unique health needs.</strong></p>
 
             <div class="flex items-end bg-cover bg-no-repeat bg-center"
             style="background-image: url(./assets/desert.png); background-size: cover; background-position: center; height: 50vh; align-items: flex-end;">
-                <div class="flex bg-white p-2 rounded-full gap-2" style="margin: 1rem;">
+                <div class="flex bg-white dark:bg-gray-800 p-2 rounded-full gap-2" style="margin: 1rem;">
                     <i class="fa-solid fa-trophy border-2 border-solid border-gray-950 rounded-full p-2" style="color: #000000;"></i>
                     <i class="fa-solid fa-arrows-spin border-2 border-solid border-gray-950 rounded-full p-2" style="color: #000000;"></i>
                     <i class="fa-solid fa-leaf border-2 border-solid border-gray-950 rounded-full p-2" style="color: #000000;"></i>
@@ -89,7 +96,7 @@
             </div>
 
             <div class="flex justify-center items-center h-screen">
-                <a href="https://your-link.com" class="bg-black hover:bg-gray-800 text-white py-2 px-4 rounded-full inline-flex items-center" style="color: white;">
+                <a href="https://your-link.com" class="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-600 py-2 px-4 rounded-full inline-flex items-center" style="color: white;">
                     <span>Unlock personalized plan.</span>
                     <svg class="ml-2 w-4 h-4" width="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
@@ -98,6 +105,13 @@
             </div>
         </div>
     </main>
+    </div>
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
 </body>
 
 </html>
